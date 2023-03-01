@@ -1,0 +1,18 @@
+{% extends "skraper/base.html" %}
+
+
+{%block navigation %}
+{% endblock %}
+{% block content %}
+<div>
+<table class="table table-bordered">
+    {% for item in items %}
+    <TR>
+       <TD >{{item.sku}}</TD>
+       <TD >{{item.price}}</TD>
+       
+    </TR>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}

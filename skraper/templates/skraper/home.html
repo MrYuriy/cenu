@@ -1,0 +1,25 @@
+{% extends "skraper/base.html" %}
+
+
+{%block navigation %}
+{% endblock %}
+{% block content %}
+<div >
+<div class="btn-group-vertical" margin:10>
+    
+    <form  action="resolt">
+        {% comment %} {% csrf_token %} {% endcomment %}
+
+        <div class="input-group mb-3" type="text", >
+            <span class="input-group-text" id="inputGroup-sizing-default">SKU: </span>
+            <input type="text" name="skus" id="skus" autofocus="" class="form-control" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+        
+        
+        <br>
+        <input class="btn btn-primary" type="submit" value="Kontynuować" id="continue">
+        
+    </form>
+</div>  
+{% endblock %}
